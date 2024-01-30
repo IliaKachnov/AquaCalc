@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/AquaForm.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <script src="./scripts/aquaForm.js" defer></script>
+  <title>Form</title>
+</head>
+<body>
+  <section class="aquaForm__container">
+    <ul class="aquaForm__crumbs">
+      <a href="#"><li class="aquaForm__crumb">Главная</li></a>
+      <a href="#"><li class="aquaForm__crumb">Каталог</li></a>
+      <a href="#"><li class="aquaForm__crumb">Системы очистки воды для коттеджей</li></a>
+      <li class="aquaForm__crumb black">Подбор коттеджного оборудования</li>
+    </ul>
+    <div class="aquaForm__main">
+      <h1>Selection of cottage water purification equipment</h1>
+      <p class="aquaForm__main-answer">Ответьте на вопросы и мы подберем для вас оборудование. Это займет пару минут</p>
+      <div class="aquaForm__info">
+        <h3>Общая информация</h3>
+        <fieldset class="aquaForm__radio-wrapper">
+          <legend class="aquaForm__legend">Тип жилья</legend>
+          <div class="aquaForm_info-inputs__wrapper">
+            <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="1" value="house">
+                <div class="custom-radio__label">Загородный дом</div>
+              </label>
+            </div>
+            <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="1" value="apart">
+                <div class="custom-radio__label">Городская квартира</div>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="aquaForm__radio-wrapper">
+          <legend class="aquaForm__legend">Водозабор</legend>
+          <div class="aquaForm_info-inputs__wrapper">
+            <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="2" value="plumbing">
+                <div class="custom-radio__label">Городской / Централизованный водопровод</div>
+              </label>
+            </div>
+            <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="2" value="well">
+                <div class="custom-radio__label">Колодец</div>
+              </label>
+            </div>
+            <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="2" value="borehole">
+                <div class="custom-radio__label">Скважина</div>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="aquaForm__radio-wrapper">
+          <legend class="aquaForm__legend">Внешний вид воды</legend>
+          <div class="aquaForm_info-inputs__wrapper">
+            <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="3" value="transparent">
+                <div class="custom-radio__label">Прозрачная</div>
+              </label>
+              <div class="aquaForm__tip-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                  <g opacity="0.2">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.34315 4.34315C3.84344 2.84285 5.87827 2 8 2C10.1217 2 12.1566 2.84285 13.6569 4.34315C15.1571 5.84344 16 7.87827 16 10C16 12.1217 15.1571 14.1566 13.6569 15.6569C12.1566 17.1571 10.1217 18 8 18C5.87827 18 3.84344 17.1571 2.34315 15.6569C0.842855 14.1566 0 12.1217 0 10C0 7.87827 0.842855 5.84344 2.34315 4.34315ZM8 16C9.5913 16 11.1174 15.3679 12.2426 14.2426C13.3679 13.1174 14 11.5913 14 10C14 8.4087 13.3679 6.88258 12.2426 5.75736C11.1174 4.63214 9.5913 4 8 4C6.4087 4 4.88258 4.63214 3.75736 5.75736C2.63214 6.88258 2 8.4087 2 10C2 11.5913 2.63214 13.1174 3.75736 14.2426C4.88258 15.3679 6.4087 16 8 16ZM7 7.333C7 6.78072 7.44772 6.333 8 6.333H8.007C8.55928 6.333 9.007 6.78072 9.007 7.333C9.007 7.88528 8.55928 8.333 8.007 8.333H8C7.44772 8.333 7 7.88528 7 7.333ZM7 9H9C9 9 9 9.78899 9 10V12.667C9 12.9342 9 13.667 9 13.667H7C7 13.667 7 13.2193 7 12.667V10C7 9.44772 7 9 7 9Z" fill="#2B1B35"/>
+                  </g>
+                </svg>
+                <div class="aquaForm__tip">
+                  <h4>Прозрачная</h4>
+                  <p>Вода внешне абсолютно прозрачная, не меняет свой вид в течение суток после набора в ёмкость.</p>
+                </div>
+              </div>
+            </div>
+           <div class="aquaForm__label-wrapper">
+              <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                <input class="custom-radio__input" type="radio" name="3" value="mudder">
+                <div class="custom-radio__label">Мутнеет со временем</div>
+              </label>
+              <div class="aquaForm__tip-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                  <g opacity="0.2">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.34315 4.34315C3.84344 2.84285 5.87827 2 8 2C10.1217 2 12.1566 2.84285 13.6569 4.34315C15.1571 5.84344 16 7.87827 16 10C16 12.1217 15.1571 14.1566 13.6569 15.6569C12.1566 17.1571 10.1217 18 8 18C5.87827 18 3.84344 17.1571 2.34315 15.6569C0.842855 14.1566 0 12.1217 0 10C0 7.87827 0.842855 5.84344 2.34315 4.34315ZM8 16C9.5913 16 11.1174 15.3679 12.2426 14.2426C13.3679 13.1174 14 11.5913 14 10C14 8.4087 13.3679 6.88258 12.2426 5.75736C11.1174 4.63214 9.5913 4 8 4C6.4087 4 4.88258 4.63214 3.75736 5.75736C2.63214 6.88258 2 8.4087 2 10C2 11.5913 2.63214 13.1174 3.75736 14.2426C4.88258 15.3679 6.4087 16 8 16ZM7 7.333C7 6.78072 7.44772 6.333 8 6.333H8.007C8.55928 6.333 9.007 6.78072 9.007 7.333C9.007 7.88528 8.55928 8.333 8.007 8.333H8C7.44772 8.333 7 7.88528 7 7.333ZM7 9H9C9 9 9 9.78899 9 10V12.667C9 12.9342 9 13.667 9 13.667H7C7 13.667 7 13.2193 7 12.667V10C7 9.44772 7 9 7 9Z" fill="#2B1B35"/>
+                  </g>
+                </svg>
+                <div class="aquaForm__tip second">
+                  <h4>Мутнеет/желтеет со временем</h4>
+                  <p>Вода при наборе в ёмкость прозрачная, но в течение суток становится рыжей, мутной, выпадает какой-либо осадок</p>
+                </div>
+              </div>
+           </div>
+           <div class="aquaForm__label-wrapper">
+            <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+              <input class="custom-radio__input" type="radio" name="3" value="muddy">
+              <div class="custom-radio__label">Мутная</div>
+            </label>
+            <div class="aquaForm__tip-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                <g opacity="0.2">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.34315 4.34315C3.84344 2.84285 5.87827 2 8 2C10.1217 2 12.1566 2.84285 13.6569 4.34315C15.1571 5.84344 16 7.87827 16 10C16 12.1217 15.1571 14.1566 13.6569 15.6569C12.1566 17.1571 10.1217 18 8 18C5.87827 18 3.84344 17.1571 2.34315 15.6569C0.842855 14.1566 0 12.1217 0 10C0 7.87827 0.842855 5.84344 2.34315 4.34315ZM8 16C9.5913 16 11.1174 15.3679 12.2426 14.2426C13.3679 13.1174 14 11.5913 14 10C14 8.4087 13.3679 6.88258 12.2426 5.75736C11.1174 4.63214 9.5913 4 8 4C6.4087 4 4.88258 4.63214 3.75736 5.75736C2.63214 6.88258 2 8.4087 2 10C2 11.5913 2.63214 13.1174 3.75736 14.2426C4.88258 15.3679 6.4087 16 8 16ZM7 7.333C7 6.78072 7.44772 6.333 8 6.333H8.007C8.55928 6.333 9.007 6.78072 9.007 7.333C9.007 7.88528 8.55928 8.333 8.007 8.333H8C7.44772 8.333 7 7.88528 7 7.333ZM7 9H9C9 9 9 9.78899 9 10V12.667C9 12.9342 9 13.667 9 13.667H7C7 13.667 7 13.2193 7 12.667V10C7 9.44772 7 9 7 9Z" fill="#2B1B35"/>
+                </g>
+              </svg>
+              <div class="aquaForm__tip">
+                <h4>Мутная</h4>
+                <p>Вода мутная, непрозрачная, имеет рыжий оттенок уже во время набора в ёмкость.</p>
+              </div>
+            </div>
+           </div>
+            
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="aquaForm__expense">
+        <h3>Расход воды</h3>
+        <div class="aquaForm__counter-wrapper">
+          <div class="aquaForm__expense-amount">
+            <p>Количество людей</p>
+            <p>Постоянно проживающих</p>
+          </div>
+          <ul class="aquaForm__counter">
+            <li onclick="decrement()" class="counter__minus">−</li>
+            <li id="counterAmount" class="counter__amount">1</li>
+            <li onclick="increment()" class="counter__plus">+</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aquaForm__analyses">
+        <h3>Анализ воды</h3>
+        <div class="aquaForm-tab__box">
+          <button class="aquaForm-tab__btn">Есть анализ воды</button>
+          <button class="aquaForm-tab__btn">Нет анализа</button>
+          <div class="aquaForm__line"></div>
+        </div>
+        
+        <div class="aquaForm-content__box">
+          <div class="aquaForm__content active">
+            <div class="aquaForm__inputs">
+              <div class="aquaForm__input">
+                <p>Дата анализа воды<span>*</span></p>
+                <div class="custom__date-wrapper">
+                  <input required id="custom__date" class="custom__date" type="date" placeholder="__.__.____" min="2015-01-01" maxlength="10"
+                  >
+                  <label for="custom__date" class="custom__date-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M15.8333 3.33203H4.16667C3.24619 3.33203 2.5 4.07822 2.5 4.9987V16.6654C2.5 17.5858 3.24619 18.332 4.16667 18.332H15.8333C16.7538 18.332 17.5 17.5858 17.5 16.6654V4.9987C17.5 4.07822 16.7538 3.33203 15.8333 3.33203Z" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.3335 1.66797V5.0013" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M13.3335 11.668V12.5013" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M10 11.668V12.5013" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M6.6665 1.66797V5.0013" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M6.6665 11.668V12.5013" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M2.5 8.33203H17.5" stroke="#D6E5FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+
+              <div class="aquaForm__input">
+                <p>Водородный показатель (PH)<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 Уд. рН">
+                </div>
+              </div>
+            </div>
+
+            <div class="aquaForm__inputs margin">
+              <div class="aquaForm__input">
+                <p>Общеесолесодержание (TDS/сухой остаток)<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="20 мг/л">
+                </div>
+              </div>
+
+              <div class="aquaForm__input">
+                <p>Общая жесткость<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 мг/л">
+                </div>
+              </div>
+            </div>
+
+            <div class="aquaForm__inputs margin">
+              <div class="aquaForm__input">
+                <p>Общее железо<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 мг/л">
+                </div>
+              </div>
+
+              <div class="aquaForm__input">
+                <p>Перманганатная окисляемость<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 мгО2/л">
+                </div>
+              </div>
+            </div>
+
+            <div class="aquaForm__inputs margin">
+              <div class="aquaForm__input">
+                <p>Марганец<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 мг/л">
+                </div>
+              </div>
+
+              <div class="aquaForm__input">
+                <p>Сероводород<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 мг/дм3">
+                </div>
+              </div>
+            </div>
+
+            <div class="aquaForm__inputs margin">
+              <div class="aquaForm__input">
+                <p>Цветность<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 град">
+                </div>
+              </div>
+
+              <div class="aquaForm__input">
+                <p>Мутность<span>*</span></p>
+                <div class="aquaForm__input-wrapper">
+                  <input required class="aquaForm__input-inner" type="text" placeholder="0 ЕМФ">
+                </div>
+              </div>
+            </div>
+
+            <fieldset class="aquaForm__radio-wrapper have">
+              <div class="aquaForm__legend-wrapper">
+                <legend class="aquaForm__legend">У исходной воды присутствует запах сероводорода?  
+                </legend>
+                <div class="aquaForm__svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                    <g opacity="0.2">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.34315 4.34315C3.84344 2.84285 5.87827 2 8 2C10.1217 2 12.1566 2.84285 13.6569 4.34315C15.1571 5.84344 16 7.87827 16 10C16 12.1217 15.1571 14.1566 13.6569 15.6569C12.1566 17.1571 10.1217 18 8 18C5.87827 18 3.84344 17.1571 2.34315 15.6569C0.842855 14.1566 0 12.1217 0 10C0 7.87827 0.842855 5.84344 2.34315 4.34315ZM8 16C9.5913 16 11.1174 15.3679 12.2426 14.2426C13.3679 13.1174 14 11.5913 14 10C14 8.4087 13.3679 6.88258 12.2426 5.75736C11.1174 4.63214 9.5913 4 8 4C6.4087 4 4.88258 4.63214 3.75736 5.75736C2.63214 6.88258 2 8.4087 2 10C2 11.5913 2.63214 13.1174 3.75736 14.2426C4.88258 15.3679 6.4087 16 8 16ZM7 7.333C7 6.78072 7.44772 6.333 8 6.333H8.007C8.55928 6.333 9.007 6.78072 9.007 7.333C9.007 7.88528 8.55928 8.333 8.007 8.333H8C7.44772 8.333 7 7.88528 7 7.333ZM7 9H9C9 9 9 9.78899 9 10V12.667C9 12.9342 9 13.667 9 13.667H7C7 13.667 7 13.2193 7 12.667V10C7 9.44772 7 9 7 9Z" fill="#2B1B35"/>
+                    </g>
+                  </svg>
+                  <div class="aquaForm__tip">
+                    <h4>Мутнеет/желтеет со временем</h4>
+                    <p>Вода при наборе в ёмкость прозрачная, но в течение суток становится рыжей, мутной, выпадает какой-либо осадок</p>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="aquaForm_info-inputs__wrapper">
+                <div class="aquaForm__label-wrapper">
+                  <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                    <input class="custom-radio__input" type="radio" name="4" value="apart">
+                    <div class="custom-radio__label">Да</div>
+                  </label>
+                </div>
+                <div class="aquaForm__label-wrapper">
+                  <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                    <input class="custom-radio__input" type="radio" name="4" value="aquaForm-no">
+                    <div class="custom-radio__label">Нет</div>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            
+
+            <div class="aquaForm__btn-wrapper">
+              <button class="aquaForm__btn">Подобрать систему</button>
+            </div>
+          </div>
+          <div class="aquaForm__content">
+            <fieldset class="aquaForm__radio-wrapper">
+              <div class="aquaForm__legend-wrapper">
+                <legend class="aquaForm__legend">На нагревательных приборах (чайник, ТЭН) образуется накипь   
+                </legend>
+                <div class="aquaForm__svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                    <g opacity="0.2">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.34315 4.34315C3.84344 2.84285 5.87827 2 8 2C10.1217 2 12.1566 2.84285 13.6569 4.34315C15.1571 5.84344 16 7.87827 16 10C16 12.1217 15.1571 14.1566 13.6569 15.6569C12.1566 17.1571 10.1217 18 8 18C5.87827 18 3.84344 17.1571 2.34315 15.6569C0.842855 14.1566 0 12.1217 0 10C0 7.87827 0.842855 5.84344 2.34315 4.34315ZM8 16C9.5913 16 11.1174 15.3679 12.2426 14.2426C13.3679 13.1174 14 11.5913 14 10C14 8.4087 13.3679 6.88258 12.2426 5.75736C11.1174 4.63214 9.5913 4 8 4C6.4087 4 4.88258 4.63214 3.75736 5.75736C2.63214 6.88258 2 8.4087 2 10C2 11.5913 2.63214 13.1174 3.75736 14.2426C4.88258 15.3679 6.4087 16 8 16ZM7 7.333C7 6.78072 7.44772 6.333 8 6.333H8.007C8.55928 6.333 9.007 6.78072 9.007 7.333C9.007 7.88528 8.55928 8.333 8.007 8.333H8C7.44772 8.333 7 7.88528 7 7.333ZM7 9H9C9 9 9 9.78899 9 10V12.667C9 12.9342 9 13.667 9 13.667H7C7 13.667 7 13.2193 7 12.667V10C7 9.44772 7 9 7 9Z" fill="#2B1B35"/>
+                    </g>
+                  </svg>
+                  <div class="aquaForm__tip extra">
+                    <h4>Мутнеет/желтеет со временем</h4>
+                    <p>Вода при наборе в ёмкость прозрачная, но в течение суток становится рыжей, мутной, выпадает какой-либо осадок</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aquaForm_info-inputs__wrapper">
+                <div class="aquaForm__label-wrapper">
+                  <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                    <input class="custom-radio__input" type="radio" name="5" value="apart">
+                    <div class="custom-radio__label">Да</div>
+                  </label>
+                </div>
+                <div class="aquaForm__label-wrapper">
+                  <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                    <input class="custom-radio__input" type="radio" name="5" value="aquaForm-no">
+                    <div class="custom-radio__label">Нет</div>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="aquaForm__radio-wrapper margin">
+              <div class="aquaForm__legend-wrapper">
+                <legend class="aquaForm__legend">У исходной воды присутсвует запах сероводорода?  
+                </legend>
+                <div class="aquaForm__svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                    <g opacity="0.2">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.34315 4.34315C3.84344 2.84285 5.87827 2 8 2C10.1217 2 12.1566 2.84285 13.6569 4.34315C15.1571 5.84344 16 7.87827 16 10C16 12.1217 15.1571 14.1566 13.6569 15.6569C12.1566 17.1571 10.1217 18 8 18C5.87827 18 3.84344 17.1571 2.34315 15.6569C0.842855 14.1566 0 12.1217 0 10C0 7.87827 0.842855 5.84344 2.34315 4.34315ZM8 16C9.5913 16 11.1174 15.3679 12.2426 14.2426C13.3679 13.1174 14 11.5913 14 10C14 8.4087 13.3679 6.88258 12.2426 5.75736C11.1174 4.63214 9.5913 4 8 4C6.4087 4 4.88258 4.63214 3.75736 5.75736C2.63214 6.88258 2 8.4087 2 10C2 11.5913 2.63214 13.1174 3.75736 14.2426C4.88258 15.3679 6.4087 16 8 16ZM7 7.333C7 6.78072 7.44772 6.333 8 6.333H8.007C8.55928 6.333 9.007 6.78072 9.007 7.333C9.007 7.88528 8.55928 8.333 8.007 8.333H8C7.44772 8.333 7 7.88528 7 7.333ZM7 9H9C9 9 9 9.78899 9 10V12.667C9 12.9342 9 13.667 9 13.667H7C7 13.667 7 13.2193 7 12.667V10C7 9.44772 7 9 7 9Z" fill="#2B1B35"/>
+                    </g>
+                  </svg>
+                  <div class="aquaForm__tip water">
+                    <h4>Мутнеет/желтеет со временем</h4>
+                    <p>Вода при наборе в ёмкость прозрачная, но в течение суток становится рыжей, мутной, выпадает какой-либо осадок</p>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="aquaForm_info-inputs__wrapper">
+                <div class="aquaForm__label-wrapper">
+                  <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                    <input class="custom-radio__input" type="radio" name="6" value="apart">
+                    <div class="custom-radio__label">Да</div>
+                  </label>
+                </div>
+                <div class="aquaForm__label-wrapper">
+                  <label class="aquaForm_info-input__wrapper custom-radio main-form__item">
+                    <input class="custom-radio__input" type="radio" name="6" value="aquaForm-no">
+                    <div class="custom-radio__label">Нет</div>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            
+            <div class="aquaForm__attention">
+              <h4>Обратите внимание</h4>
+              <p>Оптимальный выбор системы водоочистного оборудования может быть осуществлен только на основе проведенного химического анализа воды</p>
+            </div>
+
+            <div class="aquaForm__btn-wrapper">
+              <button class="aquaForm__btn">Подобрать систему</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

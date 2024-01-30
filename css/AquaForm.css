@@ -1,0 +1,808 @@
+@font-face {
+  font-family: 'AtypText-Regular';
+  src: url('../fonts/AtypText-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AtypText-Semibold';
+  src: url('../fonts/AtypText-Semibold.ttf') format('truetype'); 
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/proximanova_bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/proximanova_regular.ttf') format('truetype'); 
+}
+
+.aquaForm__container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 29px;
+}
+.aquaForm__crumbs {
+  margin-left: 100px;
+  display: flex;
+  gap: 8px;
+}
+.aquaForm__crumb {
+  cursor: pointer;
+  color: #164CB5;
+  font-feature-settings: 'ss06' on, 'ss02' on;
+  font-family: 'AtypText-Semibold';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13px; /* 118.182% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.aquaForm__crumb.black{
+  color: #2B1B35;
+}
+.aquaForm__crumbs a .aquaForm__crumb::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 0.923px;
+  opacity: 0.1;
+  background: #2B1B35;
+  margin-bottom: 2px;
+} 
+.aquaForm__crumb:last-child::after {
+  display: none;
+}
+.aquaForm__main {
+  max-width: 734px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.aquaForm__main h1 {
+  color: #2B1B35;
+  font-family: 'ProximaNova-Bold';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 120% */
+}
+.aquaForm__main-answer {
+  max-width: 680px;
+  width: 100%;
+  margin-top: 16px;
+  color: #2B1B35;
+  font-family: 'ProximaNova-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.aquaForm__info {
+  margin-top: 40px;
+  display: flex;
+  max-width: 680px;
+  width: 100%;
+  padding: 24px 24px 28px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.10);
+}
+.aquaForm__info h3 {
+  color: #2B1B35;
+  font-family: 'ProximaNova-Bold';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+
+.aquaForm__legend {
+  color: #2B1B35;
+  font-family: 'ProximaNova-Bold';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.aquaForm__legend-wrapper {
+  display: flex;
+  gap: 8px;
+}
+.aquaForm__legend-wrapper svg {
+  flex-shrink: 0;
+}
+.aquaForm_info-inputs__wrapper {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.aquaForm_info-input__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.custom-radio__input {
+  display: none;  
+}
+.custom-radio__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: opacity .3s ease;
+  color: #2B1B35;
+  font-family: 'ProximaNova-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.custom-radio__input:checked+.custom-radio__label:before {
+  border: 4px solid #050C59;
+}
+.custom-radio__label:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid #c0bbc3;
+  transition: border .1s ease-in;
+}
+.aquaForm__label-wrapper {
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+}
+.aquaForm__tip-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+.aquaForm__tip-wrapper .aquaForm__tip {
+  display: none;
+}
+.aquaForm__tip-wrapper:hover .aquaForm__tip {
+  top: -55px;
+  left: 40px;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 336px;
+  /* height: 130px; */
+  padding: 24px;
+  background-color: #FFF;
+  box-shadow: 0px 15px 50px rgba(43, 27, 53, 0.15);
+}
+.aquaForm__tip-wrapper:hover .aquaForm__tip::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: -10px;
+  z-index: 2;
+  width: 20.08px;
+  height: 20.08px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+.aquaForm__tip h4 {
+  color: #2B1B35;
+  font-family: "ProximaNova-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+.aquaForm__tip p {
+  color: #2B1B35;
+  opacity: 0.7;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+
+.custom__date-wrapper {
+  margin-top: 8px;
+  position: relative;
+}
+.custom__date {
+  max-width: 304px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #D6DCE5;
+  background: #FFF;
+  color: #2B1B35;
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  outline: none;
+  height: 40px;
+}
+.custom__date:focus {
+  border: 1px solid #0206A4;
+}
+.custom__date::placeholder {
+  color: #2B1B35;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.custom__date-icon {
+  background-color: #FFF;
+  left: 90%;
+  top: 11px;
+  position: absolute;
+  pointer-events: none;
+}
+.aquaForm__input {
+  max-width: 304px;
+  width: 100%;
+}
+.aquaForm__input p {
+  color: #2B1B35;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.7;
+}
+.aquaForm__input.active p {
+  opacity: 1;
+}
+.aquaForm__input p span {
+  opacity: 0.7;
+  color: #FA0C6E;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.aquaForm-content__box {
+  max-width: 680px;
+  width: 100%;
+}
+.aquaForm__inputs {
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  gap: 24px;
+}
+.aquaForm__input-wrapper {
+  margin-top: 8px;
+}
+.aquaForm__input-inner {
+  max-width: 304px;
+  height: 40px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #D6DCE5;
+  background: #FFF;
+  outline: none;
+  color: #2B1B35;
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.aquaForm__input-inner:focus {
+  border: 1px solid #0206A4;
+}
+.aquaForm__input-inner::placeholder {
+  color: #2B1B35;
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  opacity: 0.7;
+}
+.aquaForm__inputs.margin {
+  margin-top: 24px;
+}
+.aquaForm__radio-wrapper.have {
+  margin-top: 40px;
+}
+.aquaForm__radio-wrapper.margin {
+  margin-top: 24px;
+}
+
+.aquaForm__svg-wrapper{
+  cursor: pointer;
+  position: relative;
+}
+.aquaForm__svg-wrapper .aquaForm__tip {
+  display: none;
+}
+.aquaForm__svg-wrapper:hover .aquaForm__tip {
+  top: 40px;
+  left: -250px;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 336px;
+  padding: 24px;
+  background-color: #FFF;
+  box-shadow: 0px 15px 50px rgba(43, 27, 53, 0.15);
+}
+.aquaForm__svg-wrapper:hover .aquaForm__tip::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 250px;
+  z-index: 2;
+  width: 20.08px;
+  height: 20.08px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+
+
+
+.aquaForm__expense {
+  margin-top: 32px;
+  display: flex;
+  max-width: 680px;
+  width: 100%;
+  padding: 24px 24px 28px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.10);
+}
+.aquaForm__expense h3 {
+  color: #2B1B35;
+  font-family: 'ProximaNova-Bold';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+.aquaForm__counter-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.aquaForm__expense-amount p {
+  color: #2B1B35;
+  font-family: 'ProximaNova-Regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.aquaForm__expense-amount p:last-child {
+  font-size: 12px;
+  line-height: 16px;
+}
+.aquaForm__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 104px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #D6DCE5;
+  background: #FFF;
+}
+.counter__minus {
+  cursor: pointer;
+  width: 7px;
+  color: #0206CD;
+  font-family: 'ProximaNova-Bold';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  opacity: 0.4;
+}
+.counter__minus.active {
+  opacity: 1;
+}
+.counter__amount {
+  color: #2B1B35;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.counter__plus {
+  cursor: pointer;
+  width: 7px;
+  color: #0206CD;
+  font-family: 'ProximaNova-Bold';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+
+}
+
+.aquaForm__analyses {
+  margin-bottom: 80px;
+  margin-top: 32px;
+  display: flex;
+  max-width: 680px;
+  width: 100%;
+  padding: 24px 24px 28px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.10);
+}
+.aquaForm__analyses h3 {
+  color: #2B1B35;
+  font-family: "ProximaNova-Bold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+
+.aquaForm-tab__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D6DCE5;
+  position: relative;
+}
+.aquaForm-tab__box .aquaForm-tab__btn {
+  padding-top: 6px;
+  padding-bottom: 20px;
+  max-width: 316px;
+  width: 100%;
+  color: #2B1B35;
+  font-family: 'ProximaNova-Bold';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+/* .aquaForm-tab__box .aquaForm-tab__btn.active {
+  color: red;
+} */
+.aquaForm-content__box .aquaForm__content {
+  max-width: 100%;
+  width: 100%;
+}
+.aquaForm-content__box .aquaForm__content {
+  display: none;
+  animation: moving .5s ease;
+}
+@keyframes moving {
+  from {transform: translateX(50px); opacity: 0;}
+  to {transform: translateX(0px); opacity: 1;}
+}
+.aquaForm-content__box .aquaForm__content.active {
+  display: block;
+}
+.aquaForm__line {
+  max-width: 316px;
+  width: 100%;
+  height: 3px;
+  background: #050C59;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  transition: all .3s ease;
+}
+.aquaForm__btn-wrapper {
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.aquaForm__btn {
+  margin-top: 40px;
+  display: flex;
+  width: 305px;
+  padding: 15px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 100px;
+  background: linear-gradient(0deg, rgba(5, 12, 89, 0.30) 0%, rgba(5, 12, 89, 0.00) 87.05%), #0206CD;
+  color: #FFF;
+  text-align: center;
+  font-family: "ProximaNova-Bold";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+.aquaForm__attention {
+  margin-top: 24px;
+  display: flex;
+  max-width: 632px;
+  width: 100%;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 12px;
+  background: #F7F8F9;
+}
+.aquaForm__attention h4 {
+  color: #2B1B35;
+  font-family: "ProximaNova-Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.aquaForm__attention p {
+  max-width: 608px;
+  width: 100%;
+  color: #2B1B35;
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+@media (max-width: 1390px) {
+  .aquaForm__crumbs {
+    margin-left: 72px;
+  }
+}
+@media (max-width: 1100px) {
+  .aquaForm__crumbs {
+    margin-left: 42px;
+  }
+}
+@media (max-width: 850px) {
+  .aquaForm__crumbs {
+    margin-left: 5px;
+  }
+  .aquaForm__main h1 {
+    max-width: 680px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px; /* 125% */
+  }
+  .aquaForm__main {
+    max-width: 718px;
+    padding: 0 19px;
+    width: 100%;
+  }
+  .aquaForm__main-answer {
+    max-width: 680px;
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .aquaForm__crumbs {
+    flex-shrink: 1;
+    max-width: 100%;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .aquaForm__crumbs {
+    padding-left: 18px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .aquaForm__crumbs {
+    max-width: 700px;
+    width: 100%;
+    height: 13px;
+    flex-shrink: 0;
+    overflow: scroll;
+    margin-right: 10px;
+    display: flex;
+  }
+  .aquaForm__crumbs a {
+    flex-shrink: 0;
+  }
+  .aquaForm__crumb {
+    flex-shrink: 0;
+  }
+  .aquaForm__crumbs::-webkit-scrollbar {
+    display: none;
+  }
+  .aquaForm__main,
+  .aquaForm__return {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 720px) {
+  .aquaForm__svg-wrapper:hover .aquaForm__tip {
+  left: -310px;
+}
+.aquaForm__svg-wrapper:hover .aquaForm__tip::before {
+  left: 310px;
+}
+}
+@media (max-width: 700px) {
+  .aquaForm__line {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+@media (max-width: 690px) {
+  .custom__date-icon {
+    left: 89%;
+  }
+}
+@media (max-width: 670px) {
+  .aquaForm__tip-wrapper:hover .aquaForm__tip {
+    top: 40px;
+    left: -100px;
+  }
+  .aquaForm__tip-wrapper:hover .aquaForm__tip::before {
+    top: -10px;
+    left: 98px;
+  }
+}
+@media (max-width: 650px) {
+  .aquaForm__line {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+@media (max-width: 630px) {
+  .custom__date-icon {
+    left: 87%;
+  }
+}
+@media (max-width: 610px) {
+  .aquaForm__line {
+    max-width: 260px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .aquaForm__line {
+    max-width: 240px;
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  .custom__date-icon {
+    left: 85%;
+  }
+}
+@media (max-width: 550px) {
+  .aquaForm__btn {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .aquaForm__line {
+    max-width: 215px;
+    width: 100%;
+  }
+  .aquaForm__inputs {
+    flex-direction: column;
+  }
+  .aquaForm__input-inner,
+  .aquaForm__input,
+  .custom__date {
+    max-width: 444px;
+    width: 100%;
+  }
+  .custom__date-icon {
+    left: 93%;
+  }
+  .aquaForm__analyses,
+  .aquaForm__expense,
+  .aquaForm__info {
+    padding: 24px 12px;
+  }
+  .aquaForm__analyses h3,
+  .aquaForm__expense h3,
+  .aquaForm__info h3 {
+    font-size: 20px;
+  line-height: 26px; /* 130% */
+  }
+}
+@media (max-width: 505px) {
+  .aquaForm__tip-wrapper:hover .aquaForm__tip {
+    padding: 18px;
+    left: -100px;
+  }
+  .aquaForm__tip-wrapper:hover .aquaForm__tip.second {
+    left: -195px;
+  }
+  .aquaForm__tip-wrapper:hover .aquaForm__tip.second::before {
+    left: 195px;
+  }
+}
+@media (max-width: 500px) {
+  .aquaForm__main h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .aquaForm__info {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 495px) {
+  .custom__date-icon {
+    left: 92%;
+  }
+}
+@media (max-width: 470px) {
+  .custom__date-icon {
+    left: 92%;
+  }
+  .aquaForm__line {
+    max-width: 185px;
+    width: 100%;
+  }
+}
+@media (max-width: 435px) {
+  .custom__date-icon {
+    left: 91%;
+  }
+  .aquaForm__line {
+    max-width: 170px;
+    width: 100%;
+  }
+}
+@media (max-width: 415px) {
+  .aquaForm__tip {
+    max-width: 300px;
+    width: 100%;
+  }
+    .aquaForm__svg-wrapper:hover .aquaForm__tip {
+  left: -278px;
+  }
+  .aquaForm__svg-wrapper:hover .aquaForm__tip::before {
+    left: 275px;
+  }
+}
+@media (max-width: 385px) {
+  .custom__date-icon {
+    left: 90%;
+  }
+  .aquaForm__line {
+    max-width: 155px;
+    width: 100%;
+  }
+}

@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const required = wrapper.querySelector('.aquaResult__call-required');
       
       if (input.value.trim() !== '') {
-          required.style.display = 'none';
+          required.classList.add('active')
       } else {
-          required.style.display = 'block';
+          required.classList.remove('active');
       }
   }
 
@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const input = wrapper.querySelector('.aquaResult__call-input');
 
       input.addEventListener('focus', function() {
-          wrapper.querySelector('.aquaResult__call-required').style.display = 'none';
+          wrapper.querySelector('.aquaResult__call-required').classList.add('active');
+          input.classList.add('active');
       });
 
       input.addEventListener('input', function() {
           checkInput(wrapper);
+          
       });
 
       input.addEventListener('blur', function() {

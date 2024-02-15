@@ -76,3 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+
+
+
+
+document.addEventListener('load', function() {
+  const scrollContainer = document.querySelector('.aquaForm__crumbs');
+  scrollContainer.scrollLeft = scrollContainer.scrollWidth;
+});
